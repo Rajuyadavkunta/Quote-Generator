@@ -5,7 +5,7 @@ function App() {
   const [quote, setQuote] = useState({ text: '', author: '' });
 
   const fetchQuote = async () => {
-    const res = await fetch('http://localhost:5000/api/quote');
+    const res = await fetch('https://quote-generator-gudq.onrender.com');
     const data = await res.json();
     setQuote(data);
   };
